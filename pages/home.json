@@ -1,0 +1,619 @@
+{
+  "name": "home",
+  "type": "page",
+  "url": "/home",
+  "params": {},
+  "variables": [],
+  "children": [
+    {
+      "name": "div",
+      "nodeName": "div",
+      "elementId": "",
+      "attributes": [],
+      "classList": [],
+      "conditionalClasses": [],
+      "conditionalStyles": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [
+        {
+          "enabled": true,
+          "property": "height",
+          "value": "100% !important"
+        },
+        {
+          "enabled": true,
+          "property": "width",
+          "value": "100% !important"
+        }
+      ],
+      "layout": {
+        "container": {
+          "type": "grid",
+          "columns": [
+            {
+              "type": "span",
+              "value": 1
+            }
+          ],
+          "rows": [
+            {
+              "type": "max-content"
+            },
+            {
+              "type": "span",
+              "value": 1
+            }
+          ],
+          "items": []
+        }
+      },
+      "children": [
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [],
+          "classList": [],
+          "conditionalClasses": [],
+          "conditionalStyles": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [],
+          "layout": {
+            "cell": {
+              "type": "grid-item"
+            }
+          },
+          "children": [
+            {
+              "name": "div",
+              "nodeName": "div",
+              "elementId": "",
+              "attributes": [],
+              "classList": [],
+              "conditionalClasses": [],
+              "conditionalStyles": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": "",
+                "trackByIndex": false
+              },
+              "styles": [
+                {
+                  "enabled": true,
+                  "property": "width",
+                  "value": "100% !important"
+                },
+                {
+                  "property": "background-color",
+                  "value": "#facb2e",
+                  "enabled": true
+                }
+              ],
+              "layout": {
+                "container": {
+                  "type": "grid",
+                  "columns": [
+                    {
+                      "type": "span",
+                      "value": 1
+                    },
+                    {
+                      "type": "max-content"
+                    }
+                  ],
+                  "rows": [
+                    {
+                      "type": "max-content"
+                    },
+                    {
+                      "type": "max-content"
+                    }
+                  ],
+                  "items": []
+                }
+              },
+              "children": [
+                {
+                  "name": "Navigation",
+                  "nodeName": "bln-navigation",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "conditionalStyles": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "--bln-navigation-bg-color",
+                      "value": "#facb2e",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-navigation-hovered-item-bg-color",
+                      "value": "#e7b306",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-navigation-border-color",
+                      "value": "transparent",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-navigation-active-item-bg-color",
+                      "value": "#722e9a",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-navigation-items-border-color",
+                      "value": "transparent",
+                      "enabled": true
+                    }
+                  ],
+                  "layout": {
+                    "cell": {
+                      "type": "grid-item"
+                    }
+                  },
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "expressions": [
+                    {
+                      "expression": "({\n  \"type\": \"state\",\n  \"state\": \"home\",\n  \"parameters\": {}\n})",
+                      "to": "link"
+                    },
+                    {
+                      "expression": "[{\n        label: \"Grid Item\",\n        evaluateLabel: false,\n        onClick: \"link\",\n        link: {\n            type: \"state\",\n            state: \"home\",\n            parameters: {}\n        },\n        openIn: \"current-window\"\n    },\n    {\n        label: \"Outside Grid\",\n        evaluateLabel: false,\n        onClick: \"link\",\n        openIn: \"current-window\",\n        link: {\n            type: \"state\",\n            state: \"navbar-above-grid\",\n            parameters: {}\n        }\n    }\n]",
+                      "to": "menuItems"
+                    },
+                    {
+                      "expression": "\"Navbar as Grid-Item\"",
+                      "to": "label"
+                    }
+                  ]
+                },
+                {
+                  "name": "Dropdown Menu",
+                  "nodeName": "bln-dropdown-menu",
+                  "elementId": "user-dropdown",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "conditionalStyles": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "--bln-dropdown-menu-button-bg-color",
+                      "value": "#facb2e",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-dropdown-menu-button-hovered-bg-color",
+                      "value": "#e7b306",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-dropdown-menu-button-active-bg-color",
+                      "value": "#ca9d05",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-dropdown-menu-border-color",
+                      "value": "#facb2e",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-dropdown-menu-dropdown-active-item-bg-color",
+                      "value": "#722e9a",
+                      "enabled": true
+                    }
+                  ],
+                  "layout": {
+                    "cell": {
+                      "type": "grid-item"
+                    }
+                  },
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "expressions": [
+                    {
+                      "expression": "[{\n    label: \"Logout\",\n    onClick: \"function\",\n    function: $ctrl.logout\n}]",
+                      "to": "menuItems"
+                    },
+                    {
+                      "expression": "({\n  \"type\": \"font-icon\",\n  \"position\": \"left\",\n  \"name\": \"user-circle\",\n  \"style\": \"solid\"\n})",
+                      "to": "icon"
+                    },
+                    {
+                      "expression": "\"\"",
+                      "to": "label"
+                    }
+                  ]
+                },
+                {
+                  "name": "div",
+                  "nodeName": "div",
+                  "elementId": "",
+                  "attributes": [],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "conditionalStyles": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "enabled": true,
+                      "property": "height",
+                      "value": "100% !important"
+                    },
+                    {
+                      "enabled": true,
+                      "property": "width",
+                      "value": "100% !important"
+                    },
+                    {
+                      "property": "padding-left",
+                      "value": "12px",
+                      "enabled": true
+                    }
+                  ],
+                  "layout": {
+                    "container": {
+                      "type": "grid",
+                      "columns": [
+                        {
+                          "type": "max-content"
+                        },
+                        {
+                          "type": "max-content"
+                        },
+                        {
+                          "type": "max-content"
+                        }
+                      ],
+                      "rows": [
+                        {
+                          "type": "span",
+                          "value": 1
+                        }
+                      ],
+                      "items": []
+                    },
+                    "cell": {
+                      "type": "grid-item"
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "div",
+                      "nodeName": "div",
+                      "elementId": "",
+                      "attributes": [],
+                      "classList": [],
+                      "conditionalClasses": [],
+                      "conditionalStyles": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [
+                        {
+                          "property": "max-width",
+                          "value": "200px",
+                          "enabled": true
+                        }
+                      ],
+                      "layout": {
+                        "cell": {
+                          "type": "grid-item"
+                        }
+                      },
+                      "children": [
+                        {
+                          "name": "Dropdown",
+                          "nodeName": "bln-dropdown",
+                          "elementId": "",
+                          "attributes": [
+                            {
+                              "property": "core",
+                              "value": ""
+                            }
+                          ],
+                          "classList": [],
+                          "conditionalClasses": [],
+                          "conditionalStyles": [],
+                          "contentType": "text",
+                          "displayExpression": "$ctrl.showApplication",
+                          "events": {},
+                          "iterate": {
+                            "array": "",
+                            "variable": "",
+                            "trackByIndex": false
+                          },
+                          "styles": [
+                            {
+                              "property": "--bln-dropdown-highlight-color",
+                              "value": "#722e9a",
+                              "enabled": true
+                            }
+                          ],
+                          "layout": {},
+                          "children": [],
+                          "comments": "application",
+                          "type": "core-component",
+                          "expressions": [
+                            {
+                              "expression": "$ctrl.sentryMetricsService.application",
+                              "to": "value"
+                            },
+                            {
+                              "expression": "\"left\"",
+                              "to": "labelPosition"
+                            },
+                            {
+                              "expression": "[{\n        label: \"Martini\",\n        value: \"martini\"\n    },\n    {\n        label: \"Bellini\",\n        value: \"bellini\"\n    }\n]",
+                              "to": "values"
+                            },
+                            {
+                              "expression": "\"Application\"",
+                              "to": "label"
+                            },
+                            {
+                              "expression": "\"Select an application\"",
+                              "to": "placeholder"
+                            },
+                            {
+                              "expression": "$ctrl.handleApplicationValueChange(value)",
+                              "to": "onValueChange"
+                            }
+                          ],
+                          "formControl": {
+                            "modelName": "value"
+                          }
+                        }
+                      ],
+                      "comments": ""
+                    },
+                    {
+                      "name": "div",
+                      "nodeName": "div",
+                      "elementId": "",
+                      "attributes": [],
+                      "classList": [],
+                      "conditionalClasses": [],
+                      "conditionalStyles": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [
+                        {
+                          "property": "max-width",
+                          "value": "140px",
+                          "enabled": true
+                        }
+                      ],
+                      "layout": {
+                        "cell": {
+                          "type": "grid-item"
+                        }
+                      },
+                      "children": [
+                        {
+                          "name": "Dropdown",
+                          "nodeName": "bln-dropdown",
+                          "elementId": "",
+                          "attributes": [
+                            {
+                              "property": "core",
+                              "value": ""
+                            }
+                          ],
+                          "classList": [],
+                          "conditionalClasses": [],
+                          "conditionalStyles": [],
+                          "contentType": "text",
+                          "displayExpression": "$ctrl.showPeriod",
+                          "events": {},
+                          "iterate": {
+                            "array": "",
+                            "variable": "",
+                            "trackByIndex": false
+                          },
+                          "styles": [
+                            {
+                              "property": "--bln-dropdown-highlight-color",
+                              "value": "#722e9a",
+                              "enabled": true
+                            }
+                          ],
+                          "layout": {},
+                          "children": [],
+                          "comments": "period",
+                          "type": "core-component",
+                          "expressions": [
+                            {
+                              "expression": "$ctrl.period",
+                              "to": "value"
+                            },
+                            {
+                              "expression": "\"left\"",
+                              "to": "labelPosition"
+                            },
+                            {
+                              "expression": "[{\n        label: \"Last 90 days\",\n        value: \"90d\"\n    },\n    {\n        label: \"Last 30 days\",\n        value: \"30d\"\n    },\n    {\n        label: \"Last 14 days\",\n        value: \"14d\"\n    },\n    {\n        label: \"Last 7 days\",\n        value: \"7d\"\n    },\n    {\n        label: \"Last 24 hours\",\n        value: \"24h\"\n    },\n    {\n        label: \"Last hour\",\n        value: \"1h\"\n    }\n]",
+                              "to": "values"
+                            },
+                            {
+                              "expression": "\"Select a period\"",
+                              "to": "placeholder"
+                            },
+                            {
+                              "expression": "''",
+                              "to": "label"
+                            },
+                            {
+                              "expression": "$ctrl.handleOnValueChange(value, event)",
+                              "to": "onValueChange"
+                            }
+                          ],
+                          "formControl": {
+                            "modelName": "value"
+                          }
+                        }
+                      ],
+                      "comments": ""
+                    },
+                    {
+                      "name": "Progress",
+                      "nodeName": "bln-progress",
+                      "elementId": "progress",
+                      "attributes": [
+                        {
+                          "property": "core",
+                          "value": ""
+                        }
+                      ],
+                      "classList": [],
+                      "conditionalClasses": [],
+                      "conditionalStyles": [],
+                      "contentType": "text",
+                      "displayExpression": "$ctrl.sentryMetricsService.loading",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [
+                        {
+                          "property": "--bln-progress-circular-size",
+                          "value": "25px",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-progress-fill-color",
+                          "value": "#722e9a",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-progress-background-color",
+                          "value": "transparent",
+                          "enabled": true
+                        }
+                      ],
+                      "layout": {
+                        "cell": {
+                          "type": "grid-item",
+                          "rowAxisAlignment": "center"
+                        }
+                      },
+                      "children": [],
+                      "comments": "",
+                      "type": "core-component",
+                      "expressions": [
+                        {
+                          "expression": "\"infinite\"",
+                          "to": "type"
+                        },
+                        {
+                          "expression": "\"circular\"",
+                          "to": "shape"
+                        }
+                      ]
+                    }
+                  ],
+                  "comments": ""
+                }
+              ],
+              "comments": ""
+            }
+          ],
+          "comments": "Navigation Bar"
+        },
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [],
+          "classList": [],
+          "conditionalClasses": [],
+          "conditionalStyles": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [],
+          "layout": {
+            "cell": {
+              "type": "grid-item"
+            }
+          },
+          "children": [],
+          "comments": ""
+        }
+      ],
+      "comments": ""
+    }
+  ]
+}
